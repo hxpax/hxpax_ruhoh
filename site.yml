@@ -1,16 +1,16 @@
-title : Blog Title
+title : Xing
 tagline: Blog Tagline
 author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Xing Wong
+  email : huang1986xing@gmail.com
+  github : hxpax
+  twitter : xing
+  feedburner : xing
 
 navigation :
-  - archive.html
+#  - archive.html
   - tags.html
-  - categories.html
-  - pages.html
+#  - categories.html
+#  - pages.html
   - about.md
   
