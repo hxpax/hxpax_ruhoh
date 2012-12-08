@@ -2,13 +2,13 @@
 # Usage: http://ruhoh.com/usage/configure/ 
 
 RuhohSpec: '1.0'
-theme : twitter
+theme : myfirst
 production_url : http://sample.com
 
 posts:
   permalink: /:categories/:title/
-  summary_lines: 20
-  latest: 10
+  summary_lines: 10
+  latest: 5
   layout: 
   exclude: '~$'
 

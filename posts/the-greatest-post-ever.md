@@ -1,9 +1,9 @@
 ---
-title: Hello World
-date: '2012-12-07'
+title: The greatest post ever
+date: '2012-12-06'
 description:
-categories: ['code', 'game']
-tags: [js, tu, expert]
+categories: 
+tags: [pic, funny]
 
 layout: post
 ---

@@ -8,10 +8,11 @@ description:
 {{/ tags }}
 </ul>
 
-
+<div class="post">
 {{# tags }}
-  <h2 id="{{name}}-ref">{{name}}</h2>
+  <h3 id="{{name}}-ref">{{name}}</h3>
   {{# posts?to_posts }}
     <li><a href="{{url}}">{{title}}</a></li>
   {{/ posts?to_posts }}
 {{/ tags }} 
+</div>

@@ -3,4 +3,6 @@ title:
 description:
 ---
 
-Hi, how are you?
+<div class="post">
+	<p>Hi, there.</p>
+</div>
