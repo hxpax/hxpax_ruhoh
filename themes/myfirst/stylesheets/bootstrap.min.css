@@ -1,5 +1,6 @@
 .mysider{
 	margin: 110px 5px 5px 5px;
+	padding: 0 0 5px 0;
 }
 .post{
 	padding: 10px 10px 10px 10px;
@@ -14,6 +15,8 @@ a.con{
 
 .mecontainer{
 	margin: 20px 0;
+	float: left;
+	padding: 0 0 0 16px
 }
 
 .me1{
@@ -21,7 +24,7 @@ a.con{
 	float:left;
 	width:25%;
 	min-height:185px;
-	margin-left:2%;
+	margin-left: 0%;
 	padding: 10px 10px 10px 10px;
 	border-radius:8px;
 	box-shadow:0 1px 4px rgba(0,0,0,0.065);
