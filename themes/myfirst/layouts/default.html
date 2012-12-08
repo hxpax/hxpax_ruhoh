@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  {{# page.description }}
+    <meta name="description" content="{{ . }}">
+  {{/ page.description }}
+    <meta name="author" content="{{ site.author.name }}">
+    {{{ assets }}} 
+  </head>
+
+  <body>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="/">{{ site.title }}</a>
+				<ul class="nav">
+				{{# site.navigation?to_pages }}
+					{{> pages_list }}
+				{{/ site.navigation?to_pages }}
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div class="container">
+			<div class="row-fluid">
+				<div class="span10">
+					{{{ content }}}
+				</div>
+				<div class="span2">
+				<div class="mysider">
+					{{# db.posts.collated }}
+						{{> posts_collate }}
+					{{/ db.posts.collated }}
+				</div>
+				</div>
+			</div>
+		<footer>
+			<p>&copy; {{ site.author.name }} 2012 with help from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></p>
+		</footer>
+	</div> <!-- /container -->
+
+	{{{ google_prettify }}}
+	{{{ analytics }}}
+  </body>
+</html>
