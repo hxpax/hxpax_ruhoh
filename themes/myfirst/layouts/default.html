@@ -25,11 +25,16 @@
 	</div>
     <div class="container">
 			<div class="row-fluid">
-				<div class="span10">
+				<div class="span9">
 					{{{ content }}}
 				</div>
-				<div class="span2">
+				<div class="span3">
 				<div class="mysider">
+					<div class = "post">
+						<a class="con" href="http://twitter.com/XingShine" target="_blank"><img src="{{urls.theme_media}}/twitter.png"/></a>
+						<a class="con" href="http://www.facebook.com/hxpax" target="_blank"><img src="{{urls.theme_media}}/facebook.png"/></a>
+						<a class="con" href="http://weibo.com/hxingpax" target="_blank"><img src="{{urls.theme_media}}/weibo.png"/></a>
+					</div>
 					{{# db.posts.collated }}
 						{{> posts_collate }}
 					{{/ db.posts.collated }}

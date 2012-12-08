@@ -1,11 +1,57 @@
 .mysider{
-	padding: 130px 5px 5px 5px;
+	margin: 110px 5px 5px 5px;
 }
 .post{
 	padding: 10px 10px 10px 10px;
 	border-radius:4px;
 	box-shadow:0 1px 4px rgba(0,0,0,0.065);
 	margin-top: 5px;
+}
+
+a.con{
+	padding-left: 10px;
+}
+
+.mecontainer{
+	margin: 20px 0;
+}
+
+.me1{
+	background-color: #cccc99;
+	float:left;
+	width:25%;
+	min-height:185px;
+	margin-left:2%;
+	padding: 10px 10px 10px 10px;
+	border-radius:8px;
+	box-shadow:0 1px 4px rgba(0,0,0,0.065);
+	margin-top: 5px;
+	text-align:center;
+}
+
+.me2{
+	background-color: #cccccc;
+	float:left;
+	width:25%;
+	min-height:185px;
+	margin-left:2%;
+	padding: 10px 10px 10px 10px;
+	border-radius:8px;
+	box-shadow:0 1px 4px rgba(0,0,0,0.065);
+	margin-top: 5px;
+}
+
+.me3{
+	background-color: #ccccff;
+	float:left;
+	width:33%;
+	min-height:185px;
+	margin-left:2%;
+	padding: 10px 10px 10px 10px;
+	border-radius:8px;
+	box-shadow:0 1px 4px rgba(0,0,0,0.065);
+	margin-top: 5px;
+	text-align:center;
 }
 
 .read_more{
@@ -157,12 +203,12 @@ body{
 }
 
 a{
-	color:#08c;
+	color:#996666;
 	text-decoration:none
 }
 
 a:hover{
-	color:#005580;
+	color:#333333
 	text-decoration:underline
 }
 
@@ -206,7 +252,7 @@ a:hover{
 [class*="span"]{
 	float:left;
 	min-height:1px;
-	margin-left:20px
+	margin-left:20px;
 }
 
 .container,.navbar-static-top .container,.navbar-fixed-top .container,.navbar-fixed-bottom .container{
@@ -310,11 +356,12 @@ a:hover{
 }
 
 .row-fluid{
+	margin-top: 5px;
 	width:100%;
 	*zoom:1;
 	background-color: #fdfdfd;
 	padding: 0px 10px 10px;
-		border:1px solid #d4d4d4;
+	border:1px solid #d4d4d4;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:10px;
@@ -699,7 +746,7 @@ h4 small{
 
 .page-header{
 	padding-bottom:9px;
-	margin:20px 0 30px;
+	margin:20px 0 10px;
 	border-bottom:1px solid #eee
 }
 
@@ -3700,7 +3747,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{
 	*z-index:2;
 	margin-bottom:20px;
 	overflow:visible;
-	color:#777
+	color:#777;
 }
 
 .navbar-inner{

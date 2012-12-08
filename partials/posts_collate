@@ -1,9 +1,13 @@
-<h2>{{year}}</h2>
+{{# year}}
+<hr/>
+{{ year }}
+<hr/>
 {{#months}}
-  <h3>{{month}}</h3>
+  <strong>{{ year }} - {{month}}</strong>
   <ul>
   {{#posts?to_posts}}
     <li><span>{{date}}</span> &raquo; <a href="{{url}}">{{title}}</a></li>
   {{/posts?to_posts}}
   </ul>
 {{/months}}
+{{/ year}}
