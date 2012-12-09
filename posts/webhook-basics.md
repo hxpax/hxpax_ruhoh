@@ -4,44 +4,14 @@ date: '2012-12-08'
 description:
 categories:
 ---
-
-<h4>WebHook Basics</h4>
-
-<p>Web hooks can be registered for the following events:</p>
-<ul>
-<li>orders/create</li>
-<li>orders/updated</li>
-<li>orders/paid</li>
-<li>orders/cancelled</li>
-<li>orders/fulfilled</li>
-<li>app/uninstalled</li>
-<li>customer_groups/create</li>
-<li>customer_groups/update</li>
-<li>customer_groups/delete</li>
-<li>products/create</li>
-<li>products/update</li>
-<li>products/delete</li>
-</ul>
-
-<p>To create a web hook go to the Preferences / Email & Notifications area of your shop and click the 'Add a webhook subscription' button at the bottom. Select the event type you want to listen for from the drop down box, and enter the URL you want to receive notifications. Just like our regular API, you can choose to receive data formatted as either XML or JSON.</p>
-
-<p>Once you register a webhook URL with Shopify we will issue a HTTP POST request to the URL specified every time that event occurs. The request's POST parameters will contain XML/JSON data relevant to the event that triggered the request.</p>
-
-<p>If your server is down when Shopify POSTs to it, don’t worry; we’ll simply try again until your server confirms to us that it has successfully received the notification.</p>
-
-<p>Shopify will call the URL you provide here every time an order is placed. This means that if a merchant bulk-uploads 1000 products, your webhook will be called 1000 times.</p>
-
-<p>Timeout: The web hook request will time out after 10 seconds. Move long running processes (e.g. PDF generation) into an asynchronous background task and make sure that your application responds immediately to the Shopify server.</p>
-
 <h4>Request Data</h4>
 <p>In the POST parameters of the request Shopify passes along XML or JSON data with all of the order's details. Here is an example XML document that would be sent along with an order/* hook.<p>
 
 <p>Don't assume this is exactly what is posted ... use the "test webhook" from the Shopify admin!</p>
 
+<p>POST /your-path</p>
+<p>Content-Type: application/xml</p>
 <p><pre>
-POST /your-path
-Content-Type: application/xml
-
 &lt?xml version="1.0" encoding="UTF-8"?&gt
 &ltorder&gt
   &ltbuyer-accepts-marketing type="boolean"&gtfalse&lt/buyer-accepts-marketing&gt
