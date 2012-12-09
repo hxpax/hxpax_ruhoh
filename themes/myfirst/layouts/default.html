@@ -20,16 +20,22 @@
 				<div class="mysider">
 					<div class="mecontainer">
 						<div class="maincontainer">
-							<a href="/"  alt="Home"><img src="{{urls.theme_media}}/index.png"/></a>
+							<a href="/"><img title="Home" src="{{urls.theme_media}}/index.png"/></a>
 						</div>
 						<div class="maincontainer">
-							<a href="/about"  alt="About"><img src="{{urls.theme_media}}/about.png"/></a>
+							<a href="/about"><img title="About" src="{{urls.theme_media}}/about.png"/></a>
 						</div>
 					</div>
 					<div class = "mecontainer">
-						<a class="con" href="http://twitter.com/XingShine" target="_blank"  alt="Follow me on Twitter"><img src="{{urls.theme_media}}/twitter.png"/></a>
-						<a class="con" href="http://www.facebook.com/hxpax" target="_blank"  alt="Like me on Facebook"><img src="{{urls.theme_media}}/facebook.png"/></a>
-						<a class="con" href="{{url}}/atom.xml" target="_blank"  alt="Rss"><img src="{{urls.theme_media}}/rss.png"/></a>
+						<div class="con">
+							<a href="http://twitter.com/XingShine" target="_blank"><img title="Follow me on Twitter" src="{{urls.theme_media}}/twitter.png"/></a>
+						</div>
+						<div class="con">
+							<a class="con" href="http://www.facebook.com/hxpax" target="_blank"><img title="Like me on Facebook" src="{{urls.theme_media}}/facebook.png"/></a>
+						</div>
+						<div class="con">
+							<a class="con" href="{{url}}/atom.xml" target="_blank"><img  title="Rss" src="{{urls.theme_media}}/rss.png"/></a>
+						</div>
 					</div>
 					<div class="mecontainer">
 					{{# db.posts.collated }}
