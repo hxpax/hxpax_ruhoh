@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Xing</title>
+    <link>http://sample.com</link>
+    <pubDate>2012-12-09 13:50:03 +0800</pubDate>
+    <item>
+      <title>About WebHook</title>
+      <link>http://sample.com/about-webhook</link>
+      <pubDate>2012-12-08</pubDate>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;About WebHook&lt;/title&gt;
+    &lt;meta name="author" content="Xing Wong"&gt;
+    &lt;link href="/assets/myfirst/stylesheets/bootstrap.min.css?0.33062998266464605" type="text/css" rel="stylesheet" media="all"&gt;
+&lt;link href="/assets/myfirst/stylesheets/style.css?0.48685676787594734" type="text/css" rel="stylesheet" media="all"&gt;
+&lt;link href="/assets/myfirst/widgets/google_prettify/stylesheets/twitter-bootstrap.css?0.9944548164739428" type="text/css" rel="stylesheet" media="all"&gt;
+
+ 
+  &lt;/head&gt;
+
+  &lt;body&gt;
+	&lt;div class="navbar"&gt;
+		&lt;div class="navbar-inner"&gt;
+			&lt;div class="container"&gt;
+				&lt;a class="brand" href="/"&gt;Xing&lt;/a&gt;
+				&lt;ul class="nav"&gt;
+					
+					  &lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+    &lt;div class="container"&gt;
+			&lt;div class="row-fluid"&gt;
+				&lt;div class="span9"&gt;
+					&lt;div class="page-header"&gt;
+  &lt;h1&gt;About WebHook &lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+	&lt;div class="read_more"&gt;
+		&lt;strong&gt;Published: &lt;span&gt;2012-12-08&lt;/span&gt;&lt;/strong&gt;
+	&lt;/div&gt;
+    &lt;div class="post"&gt;
+		&lt;h4&gt;Request Data&lt;/h4&gt;
+
+&lt;p&gt;In the POST parameters of the request Shopify passes along XML or JSON data with all of the order's details. Here is an example XML document that would be sent along with an order/* hook.&lt;p&gt;
+
+&lt;p&gt;Don't assume this is exactly what is posted ... use the "test webhook" from the Shopify admin!&lt;/p&gt;
+
+&lt;p&gt;POST /your-path&lt;/p&gt;
+
+&lt;p&gt;Content-Type: application/xml&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;
+&amp;lt?xml version="1.0" encoding="UTF-8"?&amp;gt
+&amp;ltorder&amp;gt
+  &amp;ltbuyer-accepts-marketing type="boolean"&amp;gtfalse&amp;lt/buyer-accepts-marketing&amp;gt
+  &amp;ltcart-token nil="true"&amp;gt&amp;lt/cart-token&amp;gt
+  &amp;ltclosed-at type="datetime" nil="true"&amp;gt&amp;lt/closed-at&amp;gt
+  &amp;ltcreated-at type="datetime"&amp;gt2005-07-31T15:57:11Z&amp;lt/created-at&amp;gt
+  &amp;ltcurrency&amp;gtUSD&amp;lt/currency&amp;gt
+  &amp;ltemail&amp;gtbob@customer.com&amp;lt/email&amp;gt
+  &amp;ltfinancial-status&amp;gtpaid&amp;lt/financial-status&amp;gt
+  &amp;ltfulfillment-status nil="true"&amp;gt&amp;lt/fulfillment-status&amp;gt
+  &amp;ltgateway&amp;gtbogus&amp;lt/gateway&amp;gt
+  &amp;ltid type="integer"&amp;gt516163746&amp;lt/id&amp;gt
+  &amp;ltnote nil="true"&amp;gt&amp;lt/note&amp;gt
+  &amp;ltnumber type="integer"&amp;gt1&amp;lt/number&amp;gt
+  &amp;ltshop-id type="integer"&amp;gt820947126&amp;lt/shop-id&amp;gt
+  &amp;ltsubtotal-price type="integer"&amp;gt10.00&amp;lt/subtotal-price&amp;gt
+  &amp;lttaxes-included type="boolean"&amp;gtfalse&amp;lt/taxes-included&amp;gt
+  &amp;lttotal-discounts type="integer"&amp;gt0.00&amp;lt/total-discounts&amp;gt
+  &amp;lttotal-line-items-price type="integer"&amp;gt10.00&amp;lt/total-line-items-price&amp;gt
+  &amp;lttotal-price type="integer"&amp;gt11.50&amp;lt/total-price&amp;gt
+  &amp;lttotal-tax type="integer"&amp;gt1.50&amp;lt/total-tax&amp;gt
+  &amp;lttotal-weight type="integer"&amp;gt0&amp;lt/total-weight&amp;gt
+  &amp;ltupdated-at type="datetime"&amp;gt2005-08-01T15:57:11Z&amp;lt/updated-at&amp;gt
+  &amp;ltname&amp;gt#1001&amp;lt/name&amp;gt
+  &amp;ltbilling-address&amp;gt
+    &amp;ltaddress1&amp;gt123 Amoebobacterieae St&amp;lt/address1&amp;gt
+    &amp;ltaddress2&amp;gt&amp;lt/address2&amp;gt
+    &amp;ltcity&amp;gtOttawa&amp;lt/city&amp;gt
+    &amp;ltcompany&amp;gt&amp;lt/company&amp;gt
+    &amp;ltcountry&amp;gtCanada&amp;lt/country&amp;gt
+    &amp;ltfirst-name&amp;gtBob&amp;lt/first-name&amp;gt
+    &amp;ltid type="integer"&amp;gt943494288&amp;lt/id&amp;gt
+    &amp;ltlast-name&amp;gtBobsen&amp;lt/last-name&amp;gt
+    &amp;ltphone&amp;gt(555)555-5555&amp;lt/phone&amp;gt
+    &amp;ltprovince&amp;gtOntario&amp;lt/province&amp;gt
+    &amp;ltshop-id type="integer"&amp;gt820947126&amp;lt/shop-id&amp;gt
+    &amp;ltzip&amp;gtK2P0V6&amp;lt/zip&amp;gt
+    &amp;ltname&amp;gtBob Bobsen&amp;lt/name&amp;gt
+  &amp;lt/billing-address&amp;gt
+  &amp;ltshipping-address&amp;gt
+    &amp;ltaddress1&amp;gt123 Amoebobacterieae St&amp;lt/address1&amp;gt
+    &amp;ltaddress2&amp;gt&amp;lt/address2&amp;gt
+    &amp;ltcity&amp;gtOttawa&amp;lt/city&amp;gt
+    &amp;ltcompany&amp;gt&amp;lt/company&amp;gt
+    &amp;ltcountry&amp;gtCanada&amp;lt/country&amp;gt
+    &amp;ltfirst-name&amp;gtBob&amp;lt/first-name&amp;gt
+    &amp;ltid type="integer"&amp;gt943494288&amp;lt/id&amp;gt
+    &amp;ltlast-name&amp;gtBobsen&amp;lt/last-name&amp;gt
+    &amp;ltphone&amp;gt(555)555-5555&amp;lt/phone&amp;gt
+    &amp;ltprovince&amp;gtOntario&amp;lt/province&amp;gt
+    &amp;ltshop-id type="integer"&amp;gt820947126&amp;lt/shop-id&amp;gt
+    &amp;ltzip&amp;gtK2P0V6&amp;lt/zip&amp;gt
+    &amp;ltname&amp;gtBob Bobsen&amp;lt/name&amp;gt
+  &amp;lt/shipping-address&amp;gt
+  &amp;ltline-items type="array"&amp;gt
+    &amp;ltline-item&amp;gt
+      &amp;ltfulfillment-service&amp;gtmanual&amp;lt/fulfillment-service&amp;gt
+      &amp;ltgrams type="integer"&amp;gt1500&amp;lt/grams&amp;gt
+      &amp;ltid type="integer"&amp;gt642703538&amp;lt/id&amp;gt
+      &amp;ltprice type="integer"&amp;gt10.00&amp;lt/price&amp;gt
+      &amp;ltquantity type="integer"&amp;gt1&amp;lt/quantity&amp;gt
+      &amp;ltsku&amp;gt1&amp;lt/sku&amp;gt
+      &amp;lttitle&amp;gtDraft&amp;lt/title&amp;gt
+      &amp;ltvariant-id type="integer"&amp;gt47052976&amp;lt/variant-id&amp;gt
+      &amp;ltvendor nil="true"&amp;gt&amp;lt/vendor&amp;gt
+      &amp;ltname&amp;gtDraft - 151cm&amp;lt/name&amp;gt
+    &amp;lt/line-item&amp;gt
+  &amp;lt/line-items&amp;gt
+&amp;lt/order&amp;gt
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;h4&gt;Headers&lt;/h4&gt;
+
+&lt;p&gt;Webhooks have some common headers that get sent out to help consumers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;x-shopify-topic - Has the topic of the webhook (orders/create, products/create, etc.)&lt;/li&gt;
+&lt;li&gt;x-shopify-test - Set to true if the webhook was triggered by the test button in the admin&lt;/li&gt;
+&lt;li&gt;x-shopify-shop-domain - has the x.myshopify.com domain of the store where the webhook originated.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note that the application/uninstalled webhook does not send any data. You can get the shop it refers to from the appropriate header.&lt;/p&gt;
+
+		&lt;hr&gt;
+			&lt;div class="pagination"&gt;
+				&lt;ul&gt;
+					&lt;ul&gt;
+						&lt;li class="prev"&gt;&lt;a href="/what-s-webhooks" title="What's WebHooks"&gt;&amp;larr; Previous&lt;/a&gt;&lt;/li&gt;
+						&lt;li class="next disabled"&gt;&lt;a&gt;Next &amp;rarr;&lt;/a&gt;
+					&lt;/ul&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;hr&gt;
+	&lt;/div&gt;
+	&lt;div class="post"&gt;
+		&lt;div id="disqus_thread"&gt;&lt;/div&gt;
+&lt;script&gt;
+    var disqus_developer = 1;
+    var disqus_shortname = 'JekyllBootstrap'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;a href="http://disqus.com" class="dsq-brlink"&gt;blog comments powered by &lt;span class="logo-disqus"&gt;Disqus&lt;/span&gt;&lt;/a&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+				&lt;/div&gt;
+				&lt;div class="span3"&gt;
+				&lt;div class="mysider"&gt;
+					&lt;div class = "post"&gt;
+						&lt;a class="con" href="http://twitter.com/XingShine" target="_blank"&gt;&lt;img src="/assets/myfirst/media/twitter.png"/&gt;&lt;/a&gt;
+						&lt;a class="con" href="http://www.facebook.com/hxpax" target="_blank"&gt;&lt;img src="/assets/myfirst/media/facebook.png"/&gt;&lt;/a&gt;
+						&lt;a class="con" href="#" target="_blank"&gt;&lt;img src="/assets/myfirst/media/rss.png"/&gt;&lt;/a&gt;
+					&lt;/div&gt;
+						&lt;hr/&gt;
+						&lt;strong&gt;2012&lt;/strong&gt;
+						&lt;hr/&gt;
+						  &lt;ul&gt;
+						    &lt;li&gt;&lt;a href="/about-webhook"&gt;About WebHook&lt;/a&gt;&lt;/li&gt;
+						  &lt;/ul&gt;
+						  &lt;ul&gt;
+						    &lt;li&gt;&lt;a href="/what-s-webhooks"&gt;What's WebHooks&lt;/a&gt;&lt;/li&gt;
+						  &lt;/ul&gt;
+						&lt;hr/&gt;
+						&lt;strong&gt;2011&lt;/strong&gt;
+						&lt;hr/&gt;
+						  &lt;ul&gt;
+						    &lt;li&gt;&lt;a href="/the-greatest-post-ever"&gt;The greatest post ever&lt;/a&gt;&lt;/li&gt;
+						  &lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;footer&gt;
+			&lt;p&gt;&amp;copy; Xing Wong 2012 with help from &lt;a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework"&gt;ruhoh&lt;/a&gt; and &lt;a href="http://twitter.github.com/bootstrap/" target="_blank"&gt;Twitter Bootstrap&lt;/a&gt;&lt;/p&gt;
+		&lt;/footer&gt;
+	&lt;/div&gt; &lt;!-- /container --&gt;
+
+	&lt;!-- Google Prettify --&gt;
+&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i &lt; pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+&lt;/script&gt;
+&lt;!-- end Google Prettify --&gt;
+	&lt;script&gt;
+  var _gaq=[['_setAccount','UA-36912655-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>What's WebHooks</title>
+      <link>http://sample.com/what-s-webhooks</link>
+      <pubDate>2012-11-25</pubDate>
+      <description>just copy and paste</description>
+    </item>
+    <item>
+      <title>The greatest post ever</title>
+      <link>http://sample.com/the-greatest-post-ever</link>
+      <pubDate>2011-12-21</pubDate>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;The greatest post ever&lt;/title&gt;
+    &lt;meta name="author" content="Xing Wong"&gt;
+    &lt;link href="/assets/myfirst/stylesheets/bootstrap.min.css?0.7537515745688679" type="text/css" rel="stylesheet" media="all"&gt;
+&lt;link href="/assets/myfirst/stylesheets/style.css?0.25918789939457965" type="text/css" rel="stylesheet" media="all"&gt;
+&lt;link href="/assets/myfirst/widgets/google_prettify/stylesheets/twitter-bootstrap.css?0.9497570975149104" type="text/css" rel="stylesheet" media="all"&gt;
+
+ 
+  &lt;/head&gt;
+
+  &lt;body&gt;
+	&lt;div class="navbar"&gt;
+		&lt;div class="navbar-inner"&gt;
+			&lt;div class="container"&gt;
+				&lt;a class="brand" href="/"&gt;Xing&lt;/a&gt;
+				&lt;ul class="nav"&gt;
+					
+					  &lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+    &lt;div class="container"&gt;
+			&lt;div class="row-fluid"&gt;
+				&lt;div class="span9"&gt;
+					&lt;div class="page-header"&gt;
+  &lt;h1&gt;The greatest post ever &lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+	&lt;div class="read_more"&gt;
+		&lt;strong&gt;Published: &lt;span&gt;2011-12-21&lt;/span&gt;&lt;/strong&gt;
+	&lt;/div&gt;
+    &lt;div class="post"&gt;
+		&lt;p&gt;&lt;img src="/assets/media/2012_03_07_1.jpg"/&gt;&lt;/p&gt;
+
+		&lt;hr&gt;
+			&lt;div class="pagination"&gt;
+				&lt;ul&gt;
+					&lt;ul&gt;
+						&lt;li class="prev disabled"&gt;&lt;a&gt;&amp;larr; Previous&lt;/a&gt;&lt;/li&gt;
+						&lt;li class="next"&gt;&lt;a href="/what-s-webhooks" title="What's WebHooks"&gt;Next &amp;rarr;&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;hr&gt;
+	&lt;/div&gt;
+	&lt;div class="post"&gt;
+		&lt;div id="disqus_thread"&gt;&lt;/div&gt;
+&lt;script&gt;
+    var disqus_developer = 1;
+    var disqus_shortname = 'JekyllBootstrap'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;a href="http://disqus.com" class="dsq-brlink"&gt;blog comments powered by &lt;span class="logo-disqus"&gt;Disqus&lt;/span&gt;&lt;/a&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+				&lt;/div&gt;
+				&lt;div class="span3"&gt;
+				&lt;div class="mysider"&gt;
+					&lt;div class = "post"&gt;
+						&lt;a class="con" href="http://twitter.com/XingShine" target="_blank"&gt;&lt;img src="/assets/myfirst/media/twitter.png"/&gt;&lt;/a&gt;
+						&lt;a class="con" href="http://www.facebook.com/hxpax" target="_blank"&gt;&lt;img src="/assets/myfirst/media/facebook.png"/&gt;&lt;/a&gt;
+						&lt;a class="con" href="#" target="_blank"&gt;&lt;img src="/assets/myfirst/media/rss.png"/&gt;&lt;/a&gt;
+					&lt;/div&gt;
+						&lt;hr/&gt;
+						&lt;strong&gt;2012&lt;/strong&gt;
+						&lt;hr/&gt;
+						  &lt;ul&gt;
+						    &lt;li&gt;&lt;a href="/about-webhook"&gt;About WebHook&lt;/a&gt;&lt;/li&gt;
+						  &lt;/ul&gt;
+						  &lt;ul&gt;
+						    &lt;li&gt;&lt;a href="/what-s-webhooks"&gt;What's WebHooks&lt;/a&gt;&lt;/li&gt;
+						  &lt;/ul&gt;
+						&lt;hr/&gt;
+						&lt;strong&gt;2011&lt;/strong&gt;
+						&lt;hr/&gt;
+						  &lt;ul&gt;
+						    &lt;li&gt;&lt;a href="/the-greatest-post-ever"&gt;The greatest post ever&lt;/a&gt;&lt;/li&gt;
+						  &lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;footer&gt;
+			&lt;p&gt;&amp;copy; Xing Wong 2012 with help from &lt;a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework"&gt;ruhoh&lt;/a&gt; and &lt;a href="http://twitter.github.com/bootstrap/" target="_blank"&gt;Twitter Bootstrap&lt;/a&gt;&lt;/p&gt;
+		&lt;/footer&gt;
+	&lt;/div&gt; &lt;!-- /container --&gt;
+
+	&lt;!-- Google Prettify --&gt;
+&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i &lt; pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+&lt;/script&gt;
+&lt;!-- end Google Prettify --&gt;
+	&lt;script&gt;
+  var _gaq=[['_setAccount','UA-36912655-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+  </channel>
+</rss>

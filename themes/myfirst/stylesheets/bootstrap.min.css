@@ -1,6 +1,7 @@
 .mysider{
 	margin: 110px 5px 5px 5px;
 	padding: 0 0 5px 0;
+	float: left;
 }
 
 .post{
@@ -14,12 +15,16 @@ a.con{
 	padding-left: 10px;
 }
 
+div.maincontainer{
+ 	margin:0 15px 0 10px;
+	float:left;
+}
+
 .mecontainer{
-	margin: 20px 0;
+	margin: 10px 0;
 	float: left;
-	padding: 10px 10px 10px 2px;	
-	border-radius:4px;
-	box-shadow:0 1px 4px rgba(0,0,0,0.065);
+	padding: 10px 5px 10px 0px;	
+	width: 100%;
 }
 
 .me1{
@@ -362,7 +367,7 @@ a:hover{
 }
 
 .row-fluid{
-	margin-top: 5px;
+	margin-top: 10px;
 	width:100%;
 	*zoom:1;
 	background-color: #fdfdfd;
@@ -748,12 +753,6 @@ h3 small{
 
 h4 small{
 	font-size:14px
-}
-
-.page-header{
-	padding-bottom:9px;
-	margin:20px 0 10px;
-	border-bottom:1px solid #eee
 }
 
 ul,ol{

@@ -11,18 +11,6 @@
   </head>
 
   <body>
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="brand" href="/">{{ site.title }}</a>
-				<ul class="nav">
-				{{# site.navigation?to_pages }}
-					{{> pages_list }}
-				{{/ site.navigation?to_pages }}
-				</ul>
-			</div>
-		</div>
-	</div>
     <div class="container">
 			<div class="row-fluid">
 				<div class="span9">
@@ -30,14 +18,24 @@
 				</div>
 				<div class="span3">
 				<div class="mysider">
-					<div class = "mecontainer">
-						<a class="con" href="http://twitter.com/XingShine" target="_blank"><img src="{{urls.theme_media}}/twitter.png"/></a>
-						<a class="con" href="http://www.facebook.com/hxpax" target="_blank"><img src="{{urls.theme_media}}/facebook.png"/></a>
-						<a class="con" href="{{url}}/atom.xml" target="_blank"><img src="{{urls.theme_media}}/rss.png"/></a>
+					<div class="mecontainer">
+						<div class="maincontainer">
+							<a href="/"  alt="Home"><img src="{{urls.theme_media}}/index.png"/></a>
+						</div>
+						<div class="maincontainer">
+							<a href="/about"  alt="About"><img src="{{urls.theme_media}}/about.png"/></a>
+						</div>
 					</div>
+					<div class = "mecontainer">
+						<a class="con" href="http://twitter.com/XingShine" target="_blank"  alt="Follow me on Twitter"><img src="{{urls.theme_media}}/twitter.png"/></a>
+						<a class="con" href="http://www.facebook.com/hxpax" target="_blank"  alt="Like me on Facebook"><img src="{{urls.theme_media}}/facebook.png"/></a>
+						<a class="con" href="{{url}}/atom.xml" target="_blank"  alt="Rss"><img src="{{urls.theme_media}}/rss.png"/></a>
+					</div>
+					<div class="mecontainer">
 					{{# db.posts.collated }}
 						{{> posts_collate }}
 					{{/ db.posts.collated }}
+					</div>
 				</div>
 				</div>
 			</div>

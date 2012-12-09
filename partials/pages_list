@@ -1,7 +1,7 @@
 {{#is_active_page }}
-  <li class="active"><a href="{{url}}" class="active">{{title}}</a></li>
+  <li class="active"><a href="{{url}}" class="active"><img src="{{urls.theme_media}}/{{ title }}.png"/></a></li>
 {{/is_active_page}}
 
 {{^is_active_page}}
-  <li><a href="{{url}}">{{title}}</a></li>
+  <li><a href="{{url}}"><img src="{{urls.theme_media}}/{{ title }}.png"/></a></li>
 {{/is_active_page }}
