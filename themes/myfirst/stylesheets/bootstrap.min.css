@@ -28,7 +28,7 @@ div.maincontainer{
 }
 
 .me1{
-	background-color: #cccc99;
+	background-color: #330033;
 	float:left;
 	width:26%;
 	min-height:190px;
@@ -41,7 +41,8 @@ div.maincontainer{
 }
 
 .me2{
-	background-color: #cccccc;
+	background-color: #663366;
+	color: white;
 	float:left;
 	width:26%;
 	min-height:190px;
@@ -50,10 +51,12 @@ div.maincontainer{
 	border-radius:8px;
 	box-shadow:0 1px 4px rgba(0,0,0,0.065);
 	margin-top: 5px;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
 }
 
 .me3{
-	background-color: #ccccff;
+	background-color: #6D3353;
+	color:white;
 	float:left;
 	width:34%;
 	min-height:190px;
@@ -62,7 +65,8 @@ div.maincontainer{
 	border-radius:8px;
 	box-shadow:0 1px 4px rgba(0,0,0,0.065);
 	margin-top: 5px;
-	text-align:center;
+	text-align:center;	
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
 }
 
 .read_more{
