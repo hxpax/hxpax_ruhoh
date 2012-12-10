@@ -1,5 +1,5 @@
-[32m1/1 Posts processed.[0m
-[32m6/6 Pages processed.[0m
+[32m4/4 Posts processed.[0m
+[32m7/7 Pages processed.[0m
 [32m3/3 Layouts processed.[0m
 [32m3/3 Widgets processed.[0m
 {"db"=>
@@ -29,7 +29,7 @@
        "title"=>"Categories",
        "layout"=>"page"},
      "index.html"=>
-      {"title"=>"Blogs",
+      {"title"=>"Yet another blog",
        "description"=>nil,
        "categories"=>[],
        "tags"=>[],
@@ -44,6 +44,8 @@
        "url"=>"/pages",
        "title"=>"Pages",
        "layout"=>"page"},
+     "rss.xml"=>
+      {"id"=>"rss.xml", "url"=>"/rss.xml", "title"=>"Rss", "layout"=>"page"},
      "tags.html"=>
       {"description"=>nil,
        "categories"=>[],
@@ -54,49 +56,75 @@
        "layout"=>"page"}},
    "posts"=>
     {"dictionary"=>
-      {"posts/the-greatest-post-ever.md"=>
-        {"title"=>"Hello World",
-         "date"=>"2012-12-07",
+      {"posts/eva_hexie.md"=>
+        {"title"=>"EVA环球印花盖章接力中国站-帝都国际动漫博览会游记",
+         "date"=>"2012-12-09",
          "description"=>nil,
-         "categories"=>["code", "game"],
-         "tags"=>["js", "tu", "expert"],
+         "categories"=>[],
+         "tags"=>[],
+         "id"=>"posts/eva_hexie.md",
+         "url"=>
+          "/eva%E7%8E%AF%E7%90%83%E5%8D%B0%E8%8A%B1%E7%9B%96%E7%AB%A0%E6%8E%A5%E5%8A%9B%E4%B8%AD%E5%9B%BD%E7%AB%99-%E5%B8%9D%E9%83%BD%E5%9B%BD%E9%99%85%E5%8A%A8%E6%BC%AB%E5%8D%9A%E8%A7%88%E4%BC%9A%E6%B8%B8%E8%AE%B0",
+         "layout"=>"post"},
+       "posts/some awsome pics.md"=>
+        {"title"=>"some awsome pics",
+         "date"=>"2011-12-21",
+         "description"=>nil,
+         "categories"=>[],
+         "tags"=>["pic", "funny"],
          "layout"=>"post",
-         "id"=>"posts/the-greatest-post-ever.md",
-         "url"=>"/code/hello-world"}},
+         "id"=>"posts/some awsome pics.md",
+         "url"=>"/some-awsome-pics"},
+       "posts/webhook-basics.md"=>
+        {"title"=>"About WebHook",
+         "date"=>"2012-12-08",
+         "description"=>nil,
+         "categories"=>[],
+         "tags"=>[],
+         "id"=>"posts/webhook-basics.md",
+         "url"=>"/about-webhook",
+         "layout"=>"post"},
+       "posts/What's WebHooks.md"=>
+        {"title"=>"What's WebHooks",
+         "date"=>"2012-11-25",
+         "description"=>"just copy and paste",
+         "tags"=>["webhook"],
+         "categories"=>[],
+         "id"=>"posts/What's WebHooks.md",
+         "url"=>"/what-s-webhooks",
+         "layout"=>"post"}},
      "drafts"=>[],
-     "chronological"=>["posts/the-greatest-post-ever.md"],
+     "chronological"=>
+      ["posts/eva_hexie.md",
+       "posts/webhook-basics.md",
+       "posts/What's WebHooks.md",
+       "posts/some awsome pics.md"],
      "collated"=>
       [{"year"=>"2012",
         "months"=>
          [{"month"=>"December",
-           "posts"=>["posts/the-greatest-post-ever.md"]}]}],
+           "posts"=>["posts/eva_hexie.md", "posts/webhook-basics.md"]},
+          {"month"=>"November", "posts"=>["posts/What's WebHooks.md"]}]},
+       {"year"=>"2011",
+        "months"=>
+         [{"month"=>"December", "posts"=>["posts/some awsome pics.md"]}]}],
      "tags"=>
-      {"js"=>
+      {"webhook"=>
         {"count"=>1,
-         "name"=>"js",
-         "posts"=>["posts/the-greatest-post-ever.md"],
-         "url"=>"/tags#js-ref"},
-       "tu"=>
+         "name"=>"webhook",
+         "posts"=>["posts/What's WebHooks.md"],
+         "url"=>"/tags#webhook-ref"},
+       "pic"=>
         {"count"=>1,
-         "name"=>"tu",
-         "posts"=>["posts/the-greatest-post-ever.md"],
-         "url"=>"/tags#tu-ref"},
-       "expert"=>
+         "name"=>"pic",
+         "posts"=>["posts/some awsome pics.md"],
+         "url"=>"/tags#pic-ref"},
+       "funny"=>
         {"count"=>1,
-         "name"=>"expert",
-         "posts"=>["posts/the-greatest-post-ever.md"],
-         "url"=>"/tags#expert-ref"}},
-     "categories"=>
-      {"code"=>
-        {"count"=>1,
-         "name"=>"code",
-         "posts"=>["posts/the-greatest-post-ever.md"],
-         "url"=>"/categories#code-ref"},
-       "game"=>
-        {"count"=>1,
-         "name"=>"game",
-         "posts"=>["posts/the-greatest-post-ever.md"],
-         "url"=>"/categories#game-ref"}}}},
+         "name"=>"funny",
+         "posts"=>["posts/some awsome pics.md"],
+         "url"=>"/tags#funny-ref"}},
+     "categories"=>{}}},
  "site"=>
   {"title"=>"Xing",
    "tagline"=>"Blog Tagline",
@@ -106,23 +134,23 @@
      "github"=>"hxpax",
      "twitter"=>"xing",
      "feedburner"=>"xing"},
-   "navigation"=>["tags.html", "about.md"],
+   "navigation"=>["about.md"],
    "config"=>
     {"RuhohSpec"=>"1.0",
-     "theme"=>"twitter",
+     "theme"=>"mypurple",
      "production_url"=>"http://sample.com",
      "posts"=>
       {"permalink"=>"/:categories/:title/",
-       "summary_lines"=>20,
-       "latest"=>10,
+       "summary_lines"=>10,
+       "latest"=>5,
        "layout"=>nil,
        "exclude"=>"~$"},
      "pages"=>{"permalink"=>"pretty"}}},
  "page"=>{},
  "urls"=>
-  {"theme"=>"/assets/twitter",
-   "theme_stylesheets"=>"/assets/twitter/stylesheets",
-   "theme_javascripts"=>"/assets/twitter/javascripts",
-   "theme_media"=>"/assets/twitter/media",
+  {"theme"=>"/assets/mypurple",
+   "theme_stylesheets"=>"/assets/mypurple/stylesheets",
+   "theme_javascripts"=>"/assets/mypurple/javascripts",
+   "theme_media"=>"/assets/mypurple/media",
    "media"=>"/assets/media",
    "base_path"=>"/"}}
