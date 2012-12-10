@@ -12,8 +12,8 @@
   },
 
   "javascripts" : {
-    "default" : [
-    ]
+    "default" : ["masonry.min.js"
+    ],
   },
   
   "manifest" : {

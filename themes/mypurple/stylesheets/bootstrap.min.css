@@ -31,46 +31,24 @@ div.maincontainer{
 	width: 100%;
 }
 
-.me1{
-	background-color: #330033;
+div.about{
 	float:left;
-	width:26%;
-	min-height:185px;
-	margin-left: 1%;
-	padding: 10px 10px 10px 10px;
-	border-radius:8px;
-	box-shadow:0 1px 4px #663366;
-	margin-top: 5px;
+	width:29%;
+	margin-left: 2%;
+	margin-right: 2%;
 	text-align:center;
 }
-
-.me2{
-	background-color: #663366;
-	color: white;
+.me{
+	background-color: #eeeeee;
+	color:#444444;
 	float:left;
-	width:30%;
-	min-height:185px;
-	margin-left:2%;
-	padding: 10px 10px 10px 10px;
+	margin-top: 20px;
+	width:90%;
+	padding: 10px;
 	border-radius:8px;
-	box-shadow:0 1px 4px #663366;
-	margin-top: 5px;
-	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-}
-
-.me3{
-	background-color: #6D3353;
-	color:white;
-	float:left;
-	width:30%;
-	min-height:185px;
-	margin-left:2%;
-	padding: 10px 10px 10px 10px;
-	border-radius:8px;
-	box-shadow:0 1px 4px #663366;
-	margin-top: 5px;
+	box-shadow:0 1px 10px #663366;
 	text-align:center;	
-	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
 }
 
 .read_more{
@@ -132,7 +110,7 @@ sub{
 }
 
 img{
-	width:auto\9;
+	width:auto;
 	height:auto;
 	max-width:100%;
 	vertical-align:middle;
