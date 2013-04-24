@@ -18,6 +18,9 @@ description:
 		<div class="me">
 			<p>星，好青年一枚。据说文艺又二逼，但事实上高傲却宅心仁厚，低调却受万人景仰。简单地说就是，诚实可靠，正直伟岸，风趣幽默，帅得一般。</p>
 		</div>
+		<div class="me">
+			<p>死生契阔，<br/>与子成说。<br/>执子之手，<br/>与子偕老</p>
+		</div>
 	</div>
 	<div class="about">
 		<div class="me">
