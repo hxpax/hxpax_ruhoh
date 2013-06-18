@@ -1,7 +1,6 @@
 {{# year}}
 <hr/>
 <strong>{{year}}</strong>
-<hr/>
 {{#months}}
   <ul>
   {{#posts?to_posts}}
